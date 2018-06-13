@@ -1,0 +1,77 @@
+.config-view{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  .config-form{
+    flex-grow: 1;
+    padding: 5rem 2rem;
+    position: relative;
+    .uuid {
+      padding-bottom: 5rem;
+    }
+    .server-input{
+      padding-bottom: 2rem;
+      .input-and-tag{
+        display: flex;
+        align-items: center;
+        .u-text-input{
+          flex-grow: 1;
+        }
+        .error-tag{
+          flex-shrink: 0;
+          width: 2rem;
+          text-align: center;
+          color: #ff5555;
+          font-size: 1.4rem;
+          .u-icon{
+            transition: all .5s;
+            transform: scale(0);
+            opacity: 0;
+          }
+        }
+      }
+      .server-msg{
+        text-align: right;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        color: #64A9EC;
+      }
+      &.error{
+        .input-and-tag{
+          .error-tag{
+            .u-icon{
+              transform: scale(1);
+              opacity: 1;
+              text-shadow: 0 0 1rem #ff5555;
+            }
+          }
+        }
+        .server-msg{
+          color: #ff5555;
+          text-shadow: 0 0 1rem #ff5555;
+        }
+      }
+    }
+  }
+  .action-buttons{
+    background-color: #FFF;
+    box-shadow: 0 0 .5rem rgba(0,0,0,.5);
+    border-top: 1px solid #aaa;
+    flex-shrink: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    .submit {
+      margin-right: 1rem;
+    }
+    .cancel{
+    }
+  }
+}

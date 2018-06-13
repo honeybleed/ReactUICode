@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+#react-root {
+  border: 1px solid #000000;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  right: 0;
+  overflow: hidden;
+}

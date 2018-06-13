@@ -1,0 +1,38 @@
+.u-path-chooser{
+  display: flex;
+  align-items: center;
+  >.graph{
+    font-size: 2.2rem;
+    color: #888;
+    padding: 0 .5rem;
+    flex-shrink: 0;
+  }
+  >.label {
+    font-size: 1.4rem;
+    padding-right: .5rem;
+    flex-shrink: 0;
+    color: #666;
+  }
+  .input-part{
+    flex-grow: 1;
+    display: flex;
+    .input {
+      flex-grow: 1;
+      transition: all .5s;
+      font-size: 1.4rem;
+      padding: .5rem .5rem;
+      font-family: "Microsoft YaHei", serif;
+      border: 1px solid #aaa;
+      color: #555;
+      border-right:0;
+      &:focus {
+        outline: none;
+      }
+      &::-webkit-input-placeholder{
+        font-family: "Microsoft YaHei", serif;
+        color: #aaa;
+      }
+    }
+  }
+
+}

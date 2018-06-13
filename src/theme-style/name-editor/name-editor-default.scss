@@ -1,0 +1,18 @@
+.octa-name-editor{
+  display: flex;
+  .u-text-input {
+    flex-grow: 1;
+    margin-right: 1rem;
+    &.lock {
+      input {
+        border:0;
+      }
+    }
+  }
+  .u-button{
+    flex-shrink: 0;
+  }
+  .submit {
+    margin-right: 1rem;
+  }
+}

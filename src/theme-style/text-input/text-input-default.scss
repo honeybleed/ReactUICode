@@ -1,0 +1,51 @@
+.u-text-input{
+  display: flex;
+  align-items: center;
+  .graph{
+    font-size: 2.2rem;
+    color: #888;
+    padding: 0 .5rem;
+    flex-shrink: 0;
+  }
+  .label {
+    font-size: 1.4rem;
+    padding-right: .5rem;
+    flex-shrink: 0;
+    color: #666;
+  }
+  .input {
+    transition: all .5s;
+    font-size: 1.4rem;
+    flex-grow: 1;
+    padding: .5rem .5rem;
+    font-family: "Microsoft YaHei", serif;
+    border: 1px solid #aaa;
+    color: #555;
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-input-placeholder{
+      font-family: "Microsoft YaHei", serif;
+      color: #aaa;
+    }
+  }
+  &.focus {
+    .input {
+      border: 1px solid #64A9EC;
+      box-shadow: 0 0 .5rem #64A9EC;
+    }
+  }
+  &.error {
+    .input {
+      border: 1px solid #ff5555;
+      box-shadow: 0 0 .5rem #ff5555;
+    }
+  }
+  &.lock {
+    .input {
+      border: 1px solid #aaa;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}

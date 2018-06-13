@@ -1,0 +1,13 @@
+.main-window-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  .electron-ui-title-bar {
+    flex-shrink: 0;
+  }
+}

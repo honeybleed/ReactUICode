@@ -1,0 +1,10 @@
+.win-group{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  .win-container {
+    height: 20rem;
+    border: 1px solid #aaa;
+  }
+}

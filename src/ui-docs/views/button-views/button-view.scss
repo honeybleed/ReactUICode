@@ -1,0 +1,17 @@
+.button-group {
+  border: 1px solid #aaa;
+  padding: 2rem;
+  border-radius: .5rem;
+  position: relative;
+  .button-group-title {
+    position: absolute;
+    top: -.9rem;
+    left: 2rem;
+    font-size: 1.4rem;
+    background-color: #fff;
+    padding: .3rem .6rem;
+  }
+}
+.button-item {
+  padding: 0 1rem;
+}

@@ -1,0 +1,15 @@
+.theme-default {
+  *{
+    font-family: "Microsoft YaHei", serif;
+  }
+  @import "./button/button-default";
+  @import "./electron-title-bar/electron-title-bar-default";
+  @import "./file-up-load/file-up-load-default";
+  @import "./download-item/download-item-default";
+  @import "./file-item/file-item-default";
+  @import "./title-panel/title-panel-default";
+  @import "./text-input/text-input-default";
+  @import "./path-chooser/path-chooser-default";
+  @import "./pager/pager-default";
+  @import "./name-editor/name-editor-default";
+}

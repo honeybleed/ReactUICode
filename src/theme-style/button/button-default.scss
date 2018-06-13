@@ -1,0 +1,50 @@
+.u-button {
+  transition: all .2s;
+  cursor: pointer;
+  padding: .4rem .6rem;
+  line-height: 100%;
+  border: 1px solid #aaa;
+  background-color: #f0f0f0;
+  &:focus {
+    outline: none;
+    border: 1px solid #64A9EC;
+  }
+  .graph{
+    font-size: 1.4rem;
+    display: inline-block;
+    color: #333;
+    vertical-align: middle;
+  }
+  .gap {
+    width: .5rem;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .label{
+    font-size: 1.4rem;
+    display: inline-block;
+    color: #333;
+    vertical-align: middle;
+  }
+  &.hover{
+    background-color: #fff;
+    border: 1px solid #64A9EC;
+  }
+  &.down{
+    background-color: #e0e0e0;
+    border: 1px solid #aaa;
+  }
+  &.disabled {
+    cursor: not-allowed;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    text-shadow: 1px 1px 0 #FFF;
+    .graph {
+      color: #aaa;
+    }
+    .label {
+      color: #aaa;
+    }
+  }
+}

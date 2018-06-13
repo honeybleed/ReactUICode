@@ -1,0 +1,89 @@
+.file-item {
+  padding-bottom: 1rem;
+  .view-gap{
+    border: 1px solid #d0d0d0;
+    padding: .5rem;
+    border-left: .5rem solid #aaa;
+    background-color: #f0f0f0;
+    .main-view {
+      position: relative;
+      display: flex;
+      align-items: center;
+      border: 1px solid #d0d0d0;
+      margin-bottom: .5rem;
+      > .graph {
+        height: 2.5rem;
+        width: 2.5rem;
+        position: relative;
+        text-align: center;
+        margin-right: .5rem;
+        padding: .5rem;
+        flex-shrink: 0;
+        display: inline-block;
+        > * {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      .name {
+        flex-grow: 1;
+        overflow: hidden;
+        font-size: 1.4rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .state-tag {
+        flex-shrink: 0;
+        margin-right: .5rem;
+        font-size: 1.2rem;
+        background-color: #64A9EC;
+        color: #fff;
+        padding: .2rem .5rem;
+        border-radius: .2rem;
+      }
+    }
+    .action-info {
+      display: flex;
+      justify-content: flex-end;
+      .open-action {
+        margin-right: .5rem;
+      }
+      .retry-action {
+        margin-right: .5rem;
+      }
+
+      .retry-setup-action {
+        display: none;
+        margin-left: .5rem;
+        .re-setup-icon {
+          position: relative;
+          .refresh-part {
+            position: absolute;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+  &.setup{
+    .main-view {
+      .state-tag {
+        flex-shrink: 0;
+        margin-right: .5rem;
+        font-size: 1.2rem;
+        background-color: #555555;
+        color: #fff;
+        padding: .2rem .5rem;
+        border-radius: .2rem;
+      }
+    }
+    .action-info{
+      .setup-action{
+        display: none;
+      }
+      .retry-setup-action{
+        display: block;
+      }
+    }
+  }
+}

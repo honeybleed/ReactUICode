@@ -1,0 +1,64 @@
+.client-list-view {
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  padding: 1rem;
+  overflow: hidden;
+  .title-info{
+    padding: .5rem 1rem;
+    font-size: 1.4rem;
+    background-color: #ddd;
+    border-radius: .2rem;
+    display: flex;
+    align-items: center;
+    .label{
+      flex-grow: 1;
+      color: #555;
+      font-weight: bold;
+      padding-right: 1rem;
+    }
+    .u-button{
+      flex-shrink: 0;
+    }
+  }
+  .octa-table{
+    padding: 1rem 0;
+  }
+  .octa-table-panel {
+    table, td, th {
+      border: 1px solid #ddd;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      th {
+        padding: .5rem;
+        text-align: left;
+        background-color: #aaa;
+        font-size: 1.4rem;
+        color: #FFF;
+      }
+      .odd{
+        background-color: #eee;
+      }
+      tr{
+        td{
+          font-size: 1.4rem;
+          padding: .5rem;
+          color: #555;
+        }
+        .id {
+          width: 32rem;
+        }
+        .name{
+          width: 25rem;
+        }
+        .ip{
+          width: 16rem;
+        }
+        .mac{
+          width: 18rem;
+        }
+      }
+    }
+  }
+}

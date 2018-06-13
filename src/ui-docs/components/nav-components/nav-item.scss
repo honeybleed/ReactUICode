@@ -1,0 +1,52 @@
+.nav-item-link {
+  font-size: 1.6rem;
+  padding: .5rem 1rem;
+  display: block;
+  text-decoration: none;
+  &.active {
+    background-color: rgba(0,0,0,.5);
+    .graph {
+      color: #FFF;
+    }
+    .label {
+      color: #FFF;
+    }
+  }
+  .graph {
+    color: #333;
+    font-size: 1.8rem;
+    padding-right: 1rem;
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+  }
+  .label {
+    color: #333;
+  }
+}
+.sub-nav-ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: none;
+  .nav-item-link {
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    display: block;
+    text-decoration: none;
+    &.active {
+      background-color: rgba(0,0,0,.5);
+      .graph {
+        color: #FFF;
+      }
+      .label {
+        color: #FFF;
+      }
+    }
+    .graph {
+      font-size: 1.6rem;
+    }
+    .label {
+      color: #333;
+    }
+  }
+}

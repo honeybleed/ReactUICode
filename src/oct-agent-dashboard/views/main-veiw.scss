@@ -1,0 +1,106 @@
+.octa-dashboard {
+  position: absolute;
+  left:0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  .octa-top{
+    flex-shrink: 0;
+    display: flex;
+    align-items:center;
+    background-color: #64A9EC;
+    .title{
+      padding: 1rem 2rem;
+      flex-grow: 1;
+      font-size: 2rem;
+      color: #FFF;
+    }
+    .user{
+      padding: 0 1rem;
+      font-size: 1.4rem;
+      color: #FFF;
+      .name-tag{
+        border: 1px solid #333;
+        margin: 0 .8rem;
+        padding: .2rem .5rem;
+        font-size: 1.2rem;
+        background-color: #333;
+        border-radius: .5rem;
+      }
+    }
+    .log-out {
+      align-self: stretch;
+      flex-shrink: 0;
+      width: 10rem;
+      position: relative;
+      display: flex;
+      .u-button{
+        flex-grow: 1;
+        border:0;
+        background-color: rgba(0,0,0,.2);
+        .graph{
+          font-size: 2rem;
+          color: #fff;
+        }
+        .label{
+          font-size: 1.4rem;
+          color: #fff;
+        }
+        &.hover{
+          border: 1px solid #64A9EC;
+          background-color: #FFF;
+          .graph{
+            color: #64A9EC;
+          }
+          .label{
+            color: #64A9EC;
+          }
+        }
+      }
+    }
+  }
+  .octa-center{
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+    .octa-nav{
+      width: 15rem;
+      flex-shrink: 0;
+      background-color: #eee;
+      border-right: 1px solid #ddd;
+      padding: 2rem 1rem;
+      .nav-ul{
+        >li {
+          padding: .5rem 0;
+          > a{
+            transition: all .5s;
+            border-radius: .2rem;
+          }
+        }
+      }
+    }
+    .octa-main{
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 2.5rem;
+    }
+  }
+  .octa-bottom{
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: 1.4rem;
+    background-color: #64A9EC;
+    a{
+      margin: 0 1rem;
+      text-decoration: none;
+      border-radius: .5rem;
+      background-color: #333;
+      color: #fff;
+      padding: .2rem 1rem;
+    }
+  }
+}

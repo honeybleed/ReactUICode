@@ -1,0 +1,59 @@
+.real-view {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .electron-ui-title-bar {
+    flex-shrink: 0;
+  }
+  .view-stage {
+    flex-grow: 1;
+    position: relative;
+    .prepare-view {
+      z-index:1;
+    }
+    .config-view {
+      z-index:1;
+    }
+    .list-view {
+      z-index:0;
+    }
+    &.prepare {
+      .prepare-view {
+        transform: translateX(0);
+      }
+      .config-view {
+        transform: translateX(-100%);
+      }
+      .list-view {
+        transform: translateX(-100%);
+      }
+    }
+    &.config {
+      .prepare-view {
+        transform: translateX(-100%);
+      }
+      .config-view {
+        transform: translateX(0);
+      }
+      .list-view {
+        transform: translateX(-100%);
+      }
+    }
+    &.list {
+      .prepare-view {
+        transform: translateX(-100%);
+      }
+      .config-view {
+        transform: translateX(-100%);
+      }
+      .list-view {
+        transform: translateX(0);
+      }
+    }
+  }
+
+}

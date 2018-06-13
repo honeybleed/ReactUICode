@@ -1,0 +1,75 @@
+.prepare-view {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  overflow: hidden;
+  transition: all .5s;
+  .check-spinner {
+    height: 60%;
+    text-align: center;
+    flex-grow: 1;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+    .state-icon{
+      font-size: 5rem;
+      padding: 5rem 0;
+      transition: all .2s;
+      color: #64A9EC;
+      text-shadow: 0 0 1rem #64A9EC;
+    }
+    .check-desc {
+      font-size: 1.4rem;
+      animation: text-blink 1s infinite both;
+      position: relative;
+    }
+  }
+  .action-buttons{
+    background-color: #FFF;
+    box-shadow: 0 0 .5rem rgba(0,0,0,.5);
+    border-top: 1px solid #aaa;
+    flex-shrink: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    .re-check {
+      padding: 1rem;
+    }
+    .config{
+      padding: 1rem;
+    }
+  }
+  &.error{
+    .check-spinner{
+      .check-desc {
+        color: #dd5555;
+        text-shadow: 0 0 2rem #ff5555;
+        animation: none;
+      }
+    }
+  }
+  &.success{
+    .check-spinner{
+      .check-desc {
+        color: #33bb33;
+        animation: none;
+        text-shadow: 0 0 2rem #55bb55;
+      }
+    }
+  }
+}
+@keyframes text-blink {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #aaa;
+  }
+  100%{
+    color: #000;
+  }
+}
